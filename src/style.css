@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "ribbon" 
+        "navbar"
+        "main"
+        "footer";
+    grid-template-rows: 3rem 5.5rem 1fr 3rem;
+    user-select: none;
+}
+
+/* RIBBON*/
+
+.ribbon {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px 0px;
+}
+
+.ribbon-data {
+    display: flex;
+    align-items: center;
+}
+
+#ribbon-description {
+    color: white;
+    cursor: pointer;
+}
+
+#creator {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 72px;
+    justify-content: space-between;
+    padding: 0px 150px 0px;
+}
+
+#logo {
+    width: 350px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.02);
+}
+
+.nav-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+#a-top {
+    text-decoration: none;
+    color: #666666;
+}
+
+#a-top:hover {
+    border-bottom: 1px solid blue;
+}
+
+.side-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+#early {
+    cursor: pointer;
+    width: 88px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #666666;
+    background-color: transparent;
+    color: #666666;
+    transition: all 0.3s ease;
+}
+
+#early:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+#start {
+    cursor: pointer;
+    width: 88px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#start:hover {
+    border: 1px solid blue;
+    background-color: transparent;
+    color: blue;
+    font-weight: normal;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    display: flex;
+    gap: 10px;
+}
+
+#title {
+    font-size: 6rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+#title:hover {
+    transform: scale(1.02);
+}
+
+.title1 {
+    transition: all 0.3s ease;
+}
+
+.title1:hover {
+    color: blue;
+}
+
+.title2 {
+    transition: all 0.3s ease;
+}
+
+.title2:hover {
+    color: rebeccapurple;
+}
+
+.title3 {
+    transition: all 0.3s ease;
+}
+
+.title3:hover {
+    color: orange;
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 24px;
+}
+
+#main-description {
+    font-size: 1.2rem;
+    color: #666666;
+    font-weight: 500;
+}
+
+.main-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+#beta-btn {
+    width: 195px;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: blue;
+    border: none;
+    color: #fafafa;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#beta-btn:hover {
+    transform: scale(1.02);
+}
+
+#about {
+    width: 195px;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#about:hover {
+    transform: scale(1.02);
+    border: 1px solid black;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #eaeaea;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    color: #444444;
+    justify-content: center;
+}
+
+.a-bottom {
+    gap: 24px;
+}
+
+#a-bottom {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #444444;
+    margin-right: 10px;
+}
+
+#a-bottom:hover {
+    border-bottom: 1px solid #444444;
+}
+
+#copyright {
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+#flag {
+    width: 16px;
+}
+
+.region {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#r-name {
+    text-decoration: none;
+    color: #0070f3;
+    font-size: 14px;
+}
+
+#r-name:hover {
+    border-bottom: 1px solid #0070f3;
+}
